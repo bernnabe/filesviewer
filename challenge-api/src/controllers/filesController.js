@@ -1,6 +1,5 @@
 const axios = require('axios');
 const hystrixjs = require('hystrixjs');
-const { param } = require('../routes/health');
 
 const headers = {
     'Authorization': 'Bearer aSuperSecretKey',
