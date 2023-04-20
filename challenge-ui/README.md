@@ -1,0 +1,2 @@
+- Run: npm start
+- Browse: [http://localhost:3000](http://localhost:3000)

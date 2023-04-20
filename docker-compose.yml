@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  api:
+    build: /challenge-api/
+    ports:
+      - "3001:3001"
+  ui:
+    build: /challenge-ui/
+    ports:
+      - "3000:3000"
+    environment:
+      - API_BASE_URL=http://localhost:3001/
