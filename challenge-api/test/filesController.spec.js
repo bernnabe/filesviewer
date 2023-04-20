@@ -74,15 +74,15 @@ describe('Controller Tests', () => {
 
         const result = await getFilesDataWithCircuitBreaker.execute();
 
-        // Verificar resultados
-        //expect(result).to.be.an('array');
-        // expect(result).to.have.lengthOf(2);
-        // expect(result[0]).to.have.property('file', 'test6.csv');
-        // expect(result[1]).to.have.property('file', 'test15.csv');
-        // expect(result[0]).to.have.property('lines');
-        // expect(result[1]).to.have.property('lines');
-        // expect(result[0].lines).to.be.an('array').that.is.not.empty;
-        // expect(result[1].lines).to.be.an('array').that.is.not.empty;
+        //Verificar resultados
+        expect(result).to.be.an('array');
+        expect(result).to.have.lengthOf(2);
+        expect(result[0]).to.have.property('file', 'test6.csv');
+        expect(result[1]).to.have.property('file', 'test15.csv');
+        expect(result[0]).to.have.property('lines');
+        expect(result[1]).to.have.property('lines');
+        expect(result[0].lines).to.be.an('array').that.is.not.empty;
+        expect(result[1].lines).to.be.an('array').that.is.not.empty;
    });
 
 
